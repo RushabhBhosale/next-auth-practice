@@ -104,11 +104,11 @@ export default function RegisterPage() {
                   onChange={handleChange}
                />
             </div>
-            <div className="flex items-center justify-between">
-               {error && <span className="text-red-600 mx-2 px-2">{error}</span>}
+            <div className="flex flex-col items-center justify-between">
+               {error && <span className="text-red-600 m-2 mb-4 px-2">{error}</span>}
                <button
                   disabled={pending === true}
-                  className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline"
+                  className="bg-blue-500 w-full hover:bg-blue-700 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline"
                   type="submit"
                >
                   {pending ? 'Registering' : 'Sign Up'}
